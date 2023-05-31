@@ -18,7 +18,7 @@
 		<h3 class="uppercase">Контакты</h3>
 		<a href="tel:+79991234567" class="flex items-center">
 			<Icon d={mdiPhone} />
-			<span class="ml-2 text-amber-500 hover:underline">+7 999 123 4567</span>
+			<span class="ml-2 text-amber-800 dark:text-amber-200 hover:underline">+7 999 123 4567</span>
 		</a>
 	</div>
 	<div class="flex flex-col gap-4">
@@ -28,7 +28,7 @@
 				<li>
 					<a href={social.link} class="flex items-center">
 						<Icon d={social.icon.path} />
-						<span class="ml-2 text-amber-500 hover:underline">{social.label}</span>
+						<span class="ml-2 text-amber-800 dark:text-amber-200 hover:underline">{social.label}</span>
 					</a>
 				</li>
 			{/each}

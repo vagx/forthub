@@ -16,7 +16,7 @@
 				bg-black/50
 			"
 		/>
-		<div class="absolute flex flex-col items-center gap-4 lg:gap-6">
+		<div class="absolute p-2 flex flex-col items-center gap-4 lg:gap-6">
 			<h1
 				class="
 					text-5xl
