@@ -13,7 +13,7 @@
 	"
 	id="contacts"
 >
-	<img src={forthub} class="h-10" alt="FortHub logo" />
+	<img src={forthub} width="114" height="40" alt="FortHub logo" />
 	<div class="flex flex-col gap-4">
 		<h3 class="uppercase">Контакты</h3>
 		<a href="tel:+79991234567" class="flex items-center">

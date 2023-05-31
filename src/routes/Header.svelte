@@ -17,7 +17,7 @@
 >
 	<div>
 		<a href="/">
-			<img src={forthub} class="h-10" alt="FortHub logo" />
+			<img src={forthub} width="114" height="40" alt="FortHub logo" />
 		</a>
 	</div>
 
