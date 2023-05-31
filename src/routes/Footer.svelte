@@ -4,6 +4,7 @@
 		p-6
 		flex
 		flex-col
+		items-start
 		justify-center
 		md:flex-row
 		gap-8
@@ -43,8 +44,8 @@ import { mdiPhone } from '@mdi/js';
 import { siVk, siTelegram, siWhatsapp, siInstagram } from 'simple-icons';
 
 const socials = [
-	{ link: '/', label: 'vk group', icon: siVk },
-	{ link: '/', label: 'telegram channel', icon: siTelegram },
+	{ link: '/', label: 'VK group', icon: siVk },
+	{ link: '/', label: 'Telegram channel', icon: siTelegram },
 	{ link: '/', label: 'Whatsapp group', icon: siWhatsapp },
 	{ link: '/', label: 'Instagram', icon: siInstagram },
 ];
