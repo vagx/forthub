@@ -5,9 +5,8 @@
 		bg-white
 		text-neutral-900
 		dark:bg-neutral-950
-		dark:text-neutral-50
+		dark:text-white
 		transition-colors
-		duration-300
 	"
 >
 	<Header />
@@ -17,10 +16,11 @@
 	</main>
 
 	<Footer />
+
 	<Button
 		round
 		bg="bg-amber-500"
-		icon={mdiArrowUp}
+		icon={mdiChevronUp}
 		size="lg"
 		class="
 			fixed
@@ -38,7 +38,7 @@
 import Header from './Header.svelte';
 import Footer from './Footer.svelte';
 import Button from '$lib/components/Button.svelte';
-import { mdiArrowUp } from '@mdi/js';
+import { mdiChevronUp } from '@mdi/js';
 import '@fontsource-variable/inter';
 import './app.css';
 
