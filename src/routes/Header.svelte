@@ -2,108 +2,118 @@
 	class="
 		fixed
 		top-0
-		py-2
-		px-4
-		md:py-0
 		w-full
-		backdrop-blur
 		flex
-		items-center
-		justify-between
+		justify-center
+		backdrop-blur
 		bg-white/10
 		dark:bg-neutral-950/10
 		z-10
 	"
 >
-	<div>
-		<a href="/">
-			<img src={forthub} width="114" height="40" alt="FortHub logo" />
-		</a>
-	</div>
-
-	<div class="flex items-center gap-4">
-		<div
-			class="
-				{isMenuOpen ? 'right-0' : '-right-[100%]'}
-				fixed
-				top-0
-				bottom-0					
-				py-2
-				px-4
-				w-60
-				h-screen
-				bg-white
-				dark:bg-neutral-950
-				md:p-0
-				md:w-auto
-				md:h-auto
-				md:block
-				md:static
-				md:bg-transparent
-				md:dark:bg-transparent
-				shadow-md
-				md:shadow-none
-				transition-all
-				duration-300
-				ease-in-out
-				z-10
-			"
-			use:clickOutside
-			on:click_outside={() => {
-				if (isMenuOpen) isMenuOpen = false;
-			}}
-		>
-			<div class="mb-4 md:mb-0 flex justify-end">
+	<div
+		class="
+			md:container
+			md:mx-auto
+			py-2
+			px-4
+			md:py-0
+			w-full
+			flex
+			items-center
+			justify-between
+		"
+	>
+		<div>
+			<a href="/">
+				<img src={forthub} width="114" height="40" alt="FortHub logo" />
+			</a>
+		</div>
+	
+		<div class="flex items-center gap-4">
+			<div
+				class="
+					{isMenuOpen ? 'right-0' : '-right-[100%]'}
+					fixed
+					top-0
+					bottom-0					
+					py-2
+					px-4
+					w-60
+					h-screen
+					bg-white
+					dark:bg-neutral-950
+					md:p-0
+					md:w-auto
+					md:h-auto
+					md:block
+					md:static
+					md:bg-transparent
+					md:dark:bg-transparent
+					shadow-md
+					md:shadow-none
+					transition-all
+					duration-300
+					ease-in-out
+					z-10
+				"
+				use:clickOutside
+				on:click_outside={() => {
+					if (isMenuOpen) isMenuOpen = false;
+				}}
+			>
+				<div class="mb-4 md:mb-0 flex justify-end">
+					<Button
+						round
+						class="md:hidden"
+						icon={mdiClose}
+						on:click={menuToggle}
+					/>
+				</div>
+			
+				<ul class="flex flex-col md:flex-row">
+					{#each navs as nav}
+						<li>
+							<a
+								href={nav.href}
+								class="
+									px-5
+									py-4
+									w-full
+									block
+									hover:bg-black/10
+									dark:hover:bg-white/10
+									font-medium
+									hover:text-amber-500
+									rounded-md
+									md:rounded-none
+									md:w-auto
+									md:inline-block
+									md:hover:bg-transparent
+									md:dark:hover:bg-transparent
+									transition-colors
+								"
+								on:click={menuToggle}
+								on:click={e => { scrollTo(e, nav.href) }}
+							>{nav.label}</a>
+						</li>
+					{/each}
+				</ul>
+			</div>
+				
+			<div class="flex items-center gap-4">
+				<Button
+					round
+					icon={themeClass === 'dark' ? mdiWeatherSunny : mdiWeatherNight}
+					on:click={toggleTheme}
+				/>
 				<Button
 					round
 					class="md:hidden"
-					icon={mdiClose}
+					icon={mdiMenu}
 					on:click={menuToggle}
 				/>
 			</div>
-		
-			<ul class="flex flex-col md:flex-row">
-				{#each navs as nav}
-					<li>
-						<a
-							href={nav.href}
-							class="
-								px-5
-								py-4
-								w-full
-								block
-								hover:bg-black/10
-								dark:hover:bg-white/10
-								font-medium
-								hover:text-amber-500
-								rounded-md
-								md:rounded-none
-								md:w-auto
-								md:inline-block
-								md:hover:bg-transparent
-								md:dark:hover:bg-transparent
-								transition-colors
-							"
-							on:click={menuToggle}
-							on:click={e => { scrollTo(e, nav.href) }}
-						>{nav.label}</a>
-					</li>
-				{/each}
-			</ul>
-		</div>
-			
-		<div class="flex items-center gap-4">
-			<Button
-				round
-				icon={themeClass === 'dark' ? mdiWeatherSunny : mdiWeatherNight}
-				on:click={toggleTheme}
-			/>
-			<Button
-				round
-				class="md:hidden"
-				icon={mdiMenu}
-				on:click={menuToggle}
-			/>
 		</div>
 	</div>
 </nav>

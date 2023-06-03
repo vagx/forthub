@@ -11,7 +11,7 @@
 >
 	<Header />
 
-	<main class="flex flex-col items-center">
+	<main>
 		<slot />
 	</main>
 

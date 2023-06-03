@@ -61,23 +61,25 @@
 
 </section>
 
-<section id="tours" class="mt-10 p-4 max-w-2xl scroll-mt-14">
-	<h3 class="mb-4 text-2xl">tours</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
-</section>
-
-<section id="about" class="mt-10 p-4 max-w-2xl scroll-mt-14">
-	<h3 class="mb-4 text-2xl">about</h3>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
-</section>
+<div class="md:container md:mx-auto">
+	<section id="tours" class="mt-10 p-4 scroll-mt-14">
+		<h3 class="mb-4 text-2xl">tours</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quia id assumenda, quae corrupti illum consectetur! Similique delectus nihil ipsam dicta inventore natus iste nisi, dolorem ipsa iure cumque!</p>
+	</section>
+	
+	<section id="about" class="mt-10 p-4 scroll-mt-14">
+		<h3 class="mb-4 text-2xl">about</h3>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis facilis vel expedita possimus earum et consequuntur reiciendis, unde doloremque, animi aperiam magni esse rem obcaecati voluptatum culpa labore dolores illo!</p>
+	</section>
+</div>
 
 <svelte:head>
 	<title>FortHub - экскурсии по фортам финского залива</title>
