@@ -27,7 +27,7 @@
 					text-center
 				"
 			>
-				Welcome to<br /><span class="text-amber-500">FortHub</span>
+				Welcome to<br /><span class="text-amber-500">Forthub</span>
 			</h1>
 			<h2 class="text-lg md:text-xl xl:text-2xl text-white text-center">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -82,8 +82,8 @@
 </div>
 
 <svelte:head>
-	<title>FortHub - экскурсии по фортам финского залива</title>
-	<meta name="description" content="FortHub site" />
+	<title>Forthub - экскурсии по фортам финского залива</title>
+	<meta name="description" content="Откройте для себя историю и красоту фортов финского залива с Forthub! Мы предлагаем увлекательные и доступные экскурсии на катерах и яхтах по самым интересным фортам. Присоединяйтесь к нам и наслаждайтесь незабываемым приключением!" />
 	<meta name="keywords" content="кронштадт, экскурсии, форты" />
 </svelte:head>
 

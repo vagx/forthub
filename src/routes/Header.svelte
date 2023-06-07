@@ -1,4 +1,4 @@
-<nav
+<header
 	class="
 		fixed
 		top-0
@@ -30,7 +30,7 @@
 			</a>
 		</div>
 	
-		<div class="flex items-center gap-4">
+		<nav class="flex items-center gap-4">
 			<div
 				class="
 					{isMenuOpen ? 'right-0' : '-right-[100%]'}
@@ -114,9 +114,9 @@
 					on:click={menuToggle}
 				/>
 			</div>
-		</div>
+		</nav>
 	</div>
-</nav>
+</header>
 
 <script>
 import forthub from '$lib/images/forthub.svg';
@@ -160,8 +160,5 @@ const toggleTheme = () => {
 	} catch {}
 };
 
-$: {
-	document.documentElement.className = themeClass;
-	// document.documentElement.style.colorScheme = themeClass === 'dark' ? 'dark' : 'light';
-};
+$: document.documentElement.className = themeClass;
 </script>
