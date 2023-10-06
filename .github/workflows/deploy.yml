@@ -11,20 +11,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: pnpm-setup
+        uses: pnpm/action-setup@v2
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 19
-          cache: npm
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: build
         env:
           BASE_PATH: '/forthub'
         run: |
-          npm run build
+          pnpm run build
           touch build/.nojekyll
 
       - name: Upload Artifacts
@@ -43,7 +46,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     steps:
       - name: Deploy
         id: deployment
