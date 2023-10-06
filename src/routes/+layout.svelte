@@ -39,7 +39,6 @@ import Header from './Header.svelte';
 import Footer from './Footer.svelte';
 import Button from '$lib/components/Button.svelte';
 import { mdiChevronUp } from '@mdi/js';
-import '@fontsource-variable/inter';
 import './app.css';
 
 let y;
